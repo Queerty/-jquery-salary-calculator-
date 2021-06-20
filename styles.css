@@ -8,3 +8,11 @@ button{
     margin-top: 10px;
     border-radius: 4px;
 }
+
+main{
+    margin: 8px;
+}
+
+section{
+    margin: 4px;
+}
