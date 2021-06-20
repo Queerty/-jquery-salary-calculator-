@@ -4,6 +4,10 @@ function onReady(){
 //listen for form submit click
 console.log('Page is loaded');
 
+$('form').on('submit', function(event){
+    event.preventDefault();
+    addEmployee();
+});
 
 };
 
@@ -30,9 +34,9 @@ function addEmployee(){
 
 }
 
-$('#empSubmit').on('click', function(){
-    addEmployee();
-});
+// $('#empSubmit').on('click', function(){
+//     addEmployee();
+// });
 
 
 
@@ -111,7 +115,7 @@ for (let i = 1; i < table.rows.length; i++){
 }
 console.log(sumVal);
 monthlySum = (sumVal/12);
-return  $('#totalMonthly').append('<p> Total Monthly: $'+ (Number(sumVal)/12) +'</p>');
+return  $('#totalMonthly').append('<p> Total Monthly: $'+ ((Number(sumVal)/12)).toFixed(2) +'</p>');
 
 }
 
