@@ -18,6 +18,12 @@ function addEmployee(){
     let empTitle = $('#empTitleInput').val();
     let annualSalary = Number($('#annualSalaryInput').val());
 
+if(firstName == "" || lastName == ""){
+    return alert("Please enter employee's name");
+};
+if(empId == "" || empTitle ==""){
+    return alert("Please enter all employee fields")
+};
 
     console.log(`Add employee when clicked`);
     $('#employeeSalaries > tbody').append('<tr><td>' + firstName + '</td><td>' + lastName + '</td><td>' + empId + '</td><td>' + empTitle + '</td><td>' + annualSalary + '</td><td><button id="delete" class="remove">Delete</button></td></tr>');

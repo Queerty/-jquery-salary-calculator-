@@ -18,40 +18,44 @@
                 <legend> Add Employee  </legend>
         
         <!-- <label for="addEmployeeForm">Employee Info</label> -->
+    <div class = "container">
+        <form>
+        <div class="form-group row"> 
+           
+            <div class="form-group">  
+            <label for="firstNameInput" class="form-label">First Name:</label>
+            <input type="text" placeholder="ex. Sam" id="firstNameInput"> 
+            </div>
 
-         <form>
-        <section id="firstName" class="formInput">
-            <label for="firstNameInput">First Name:</label>
-            <input type="text" placeholder="ex. Sam" id="firstNameInput">
-        </section>
-
-        <section id="lastName" class="formInput">
-            <label for="lastNameInput">Last Name:</label>
+            <div class="form-group">  
+            <label for="lastNameInput" class="form-label">Last Name:</label>
             <input type="text" placeholder="ex. Smith" id="lastNameInput">
-        </section>
+            </div>
 
-        <section id="empId" class="formInput">
-            <label for="empIdInput">ID#:</label>
+            <div class="form-group">  
+            <label for="empIdInput" class="form-label">ID#:</label>
             <input type="number" placeholder="#####" id="empIdInput">
-        </section>
+            </div>
 
-        <section id="empTitle" class="formInput">
-            <label for="empTitle">Title:</label>
+            <div class="form-group">  
+            <label for="empTitleInput" class="form-label">Title:</label>
             <input type="text" placeholder="ex. CEO" id="empTitleInput">
-        </section>
+            </div>
 
-        <section id="annualSalary" class="formInput">
-            <label for="annualSalary">Annual Salary:</label>
+            <div class="form-group">  
+            <label for="annualSalaryInput" class="form-label">Annual Salary:</label>
             <input type="number" placeholder="$USD" id="annualSalaryInput">
-        </section> 
+            </div> 
+        </div>
        
         <!-- <div class="input-group mb-3">
             <span class="input-group-text">$</span>
             <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
             <span class="input-group-text">.00</span>
           </div> -->
-        <button type="submit" class="btn btn-primary">Submit</button>
+        <button type="submit" class="btn btn-secondary">Submit</button>
     </form>
+    </div>
     <div class="container">
         <div class="table-responsive">
             <table class="table table-striped caption-top" id="employeeSalaries">

@@ -1,7 +1,8 @@
 header{
-    background-color:thistle;
+    background-color: #333;
     padding: 10px;
-    border-left: solid 6px purple;
+    color:azure;
+    border-left: solid 6px grey;
 }
 
 th{
@@ -9,7 +10,6 @@ th{
     padding-bottom: 8px;
     text-align: left;
     color: black;
-    background-color: darkslategrey;
 }
  
 button{
@@ -23,4 +23,12 @@ main{
 
 section{
     margin-top: 8px;
+}
+
+input{
+  float: right;
+  margin-right: 70%;
+}
+.formInput{
+    margin: 4px;
 }
