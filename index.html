@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css">
-    <title>Document</title>
+    <title>Salary Calculator</title>
 </head>
 <body>
     <header>
@@ -14,75 +14,85 @@
     </header>
     <main>
 
-        <form id="addEmployeeForm">
-            <fieldset id="employeeInfo">
+        
                 <legend> Add Employee  </legend>
-        <label for="addEmployeeForm">Employee Info</label>
+        
+        <!-- <label for="addEmployeeForm">Employee Info</label> -->
 
             
-        <section id="firstName">
+        <section id="firstName" class="formInput">
             <label for="firstNameInput">First Name:</label>
             <input type="text" placeholder="ex. Sam" id="firstNameInput">
         </section>
 
-        <section id="lastName">
+        <section id="lastName" class="formInput">
             <label for="lastNameInput">Last Name:</label>
             <input type="text" placeholder="ex. Smith" id="lastNameInput">
         </section>
 
-        <section id="empId">
+        <section id="empId" class="formInput">
             <label for="empIdInput">ID#:</label>
-            <input type="text" placeholder="#####" id="empIdInput">
+            <input type="number" placeholder="#####" id="empIdInput">
         </section>
 
-        <section id="empTitle">
+        <section id="empTitle" class="formInput">
             <label for="empTitle">Title:</label>
             <input type="text" placeholder="ex. CEO" id="empTitleInput">
         </section>
 
-        <section id="annualSalary">
+        <section id="annualSalary" class="formInput">
             <label for="annualSalary">Annual Salary:</label>
-            <input type="text" placeholder="$USD" id="annualSalaryInput">
-        </section>
-        <button type="submit" id="empSubmit">Submit</button>
-    </fieldset>
-    </form>
-
-    <table id="employeeTable">Employees</table>
-    <table class="table table-striped">
-        <thead>
+            <input type="number" placeholder="$USD" id="annualSalaryInput">
+        </section> 
+        <!-- <div class="input-group mb-3">
+            <span class="input-group-text">$</span>
+            <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+            <span class="input-group-text">.00</span>
+          </div> -->
+        <button id="empSubmit">Submit</button>
+    <div class="container">
+        <div class="table-responsive">
+            <table class="table table-striped" id="employeeSalaries">
+                <thead>
+                    <tr>
+                        <th scope="col">First Name</th>
+                        <th scope="col">Last Name</th>
+                        <th scope="col">ID</th>
+                        <th scope="col">Title</th>
+                        <th scope="col">Annual Salary</th>
+                        <th></th>
+                    </tr>
+                  </thead>
+                  <tbody>
+           
+                  </tbody> 
+                  <tfoot>
+                    
+                </tfoot>           
+                </table>
+          </div>
+    <!-- <table id="employeeTable" class="table table-striped">Employees</table>
+        <caption id="listEmpSalaries"> List of employee salaries</caption> -->
+        <!-- <thead>
           <tr>
-            <th scope="col">#</th>
-            <th scope="col">First</th>
-            <th scope="col">Last</th>
-            <th scope="col">Handle</th>
+            <th scope="col">First Name</th>
+            <th scope="col">Last Name</th>
+            <th scope="col">ID</th>
+            <th scope="col">Title</th>
+            <th scope="col">Annual Salary</th>
+            <th></th>
           </tr>
         </thead>
         <tbody>
           <tr>
-            <th scope="row">1</th>
-            <td>Mark</td>
-            <td>Otto</td>
-            <td>@mdo</td>
-          </tr>
-          <tr>
-            <th scope="row">2</th>
-            <td>Jacob</td>
-            <td>Thornton</td>
-            <td>@fat</td>
-          </tr>
-          <tr>
-            <th scope="row">3</th>
-            <td>Larry</td>
-            <td>the Bird</td>
-            <td>@twitter</td>
-          </tr>
-        </tbody>
+        </tbody> 
       </table>
-    <p>Total Monthly:<span>$</span></p>
+    </div>-->
+    <section id="totalMonthly"></section>
     </main>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
-<script src="client.js"></script>    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    <script src="client.js"></script>   
 <footer></footer>
 </body>
 </html>

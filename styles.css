@@ -1,0 +1,10 @@
+header{
+    background-color:thistle;
+    padding: 10px;
+    border-left: solid 6px purple;
+}
+ 
+button{
+    margin-top: 10px;
+    border-radius: 4px;
+}
