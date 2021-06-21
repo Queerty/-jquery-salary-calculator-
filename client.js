@@ -121,6 +121,9 @@ for (let i = 1; i < table.rows.length; i++){
 }
 console.log(sumVal);
 monthlySum = (sumVal/12);
+if(monthlySum > 20000){
+    $('#totalMonthly').css('background-color', 'red');
+}
 return  $('#totalMonthly').append('<p> Total Monthly: $'+ ((Number(sumVal)/12)).toFixed(2) +'</p>');
 
 }
